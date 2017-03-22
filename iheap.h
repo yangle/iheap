@@ -31,8 +31,7 @@
 namespace iheap { namespace detail
 {
     template<typename RandomIt, typename Indexer, typename Compare>
-    void bubble_up(RandomIt begin, RandomIt end, RandomIt it, Indexer indexer,
-                   Compare comp = Compare())
+    void bubble_up(RandomIt begin, RandomIt end, RandomIt it, Indexer indexer, Compare comp)
     {
         using std::swap;
 
@@ -52,8 +51,7 @@ namespace iheap { namespace detail
     }
 
     template<typename RandomIt, typename Indexer, typename Compare>
-    void bubble_down(RandomIt begin, RandomIt end, RandomIt it, Indexer indexer,
-                     Compare comp = Compare())
+    void bubble_down(RandomIt begin, RandomIt end, RandomIt it, Indexer indexer, Compare comp)
     {
         using std::swap;
 
