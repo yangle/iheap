@@ -12,7 +12,7 @@ For example, each iteration in [Dijkstra's algorithm][dijk] involves
 (b) *updating* the tentative distances of `x`'s neighbors.  
 A normal binary heap suffices for (a), but not quite for (b), as the latter
 calls for both looking up the in-heap index of each neighbor node and modifying
-elements deep inside the heap with destroying the heap order.
+elements deep inside the heap without destroying the heap order.
 These two problems can be solved simultaneously using an indexed heap.
 
 [dijk]: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
